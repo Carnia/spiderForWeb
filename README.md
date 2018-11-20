@@ -43,7 +43,10 @@ async.mapLimit(list, 5, function (urlFromList, cb) {
  }, handleAllDone);
 ```
 list是所有URL的集合，想办法弄到...(可以通过读取excel)
+
 5是并发上限，list中的元素会依次当作urlFromList传入第三个参数
+
 reptileMove是自定义的处理函数，里面负责处理界面数据获取，完毕后存入结果数组
+
 handleAllDone是list遍历完毕后的回调，在这里处理结果数组，即输出excel
 
