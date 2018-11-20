@@ -48,7 +48,6 @@ function creatXls(name, data) {
         throw err;
       }
       console.log('Write to xls has finished');
-
       // 读xlsx
       // var obj = xlsx.parse("./" + "resut.xls");
       // console.log(JSON.stringify(obj));
@@ -56,7 +55,7 @@ function creatXls(name, data) {
   })
 }
 // creatXls('result', [{
-//   name: '医院数据',
+//   name: '数据',
 //   data: _data
 // }])
 // 写xlsx
